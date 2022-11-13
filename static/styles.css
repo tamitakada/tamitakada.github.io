@@ -1,6 +1,5 @@
 :root {
-    --blue: #ABDCD3;
-    --darkGreen: #3CA693;
+    --red: #DA3F0F;
 }
 
 html, body {
@@ -16,77 +15,176 @@ html, body {
     outline: none;
 }
 
-@font-face {
-    font-family: SoukouMincho;
-    src: url("fonts/SoukouMincho.ttf");
-}
+/* FONT FACE DECLARATIONS ======================================================== */
 
-h1 {
-    font-family: SoukouMincho;
-    letter-spacing: 20px;
-    color: white;
-    font-size: 3em;
-}
+@font-face { font-family: ZenMaru; src: url("fonts/ZenMaruGothic-Regular.ttf"); }
+@font-face { font-family: ZenMaru-Bold; src: url("fonts/ZenMaruGothic-Bold.ttf"); }
+@font-face { font-family: Ontel; src: url("fonts/Ontel-YzV0a.ttf"); }
+@font-face { font-family: Shokaki; src: url("fonts/しょかきさらり行体.ttf"); }
+@font-face { font-family: BungeeHairline; src: url("fonts/BungeeHairline-Regular.ttf"); }
+@font-face { font-family: BungeeInline; src: url("fonts/BungeeInline-Regular.ttf"); }
+@font-face { font-family: Cecep; src: url("fonts/CecepsHandwriting-vmpKZ.ttf"); }
 
+/* TEXT STYLES =================================================================== */
+h1 { font-size: 80px; color: white; }
 h2 {
-    font-family: SoukouMincho;
-    letter-spacing: 12px;
-    color: var(--darkGreen);
+    font-family: ZenMaru-Bold;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 10px;
+}
+h3 { font-size: 40px; color: white; }
+h4 {
+    font-family: Shokaki;
+    font-size: 50px;
+    color: var(--red);
+}
+h5 { font-family: ZenMaru; font-size: 12px; letter-spacing: 3px; color: white; }
+
+a { text-decoration: none; color: white; font-family: ZenMaru-Bold; letter-spacing: 2px; }
+p {
+    font-family: ZenMaru;
+    color: white;
+    font-size: 20px;
 }
 
-p { font-family: SoukouMincho; color: white; font-size: 1.6em; line-height: 1.3em; }
-
-a { font-family: SoukouMincho; color: white; }
-a:hover { text-shadow: 2px 0 black; }
-
-.learn-more { border: 1px solid white; background-color: transparent; padding: 5px 10px; }
-.learn-more:hover { background-color: white; color: black; }
-
-.position-center {
-    position: absolute;
-    left: 50%; top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.position-center-x {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-.center {
+/* GENERAL CLASSES =============================================================== */
+.center-col {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.circle { width: 20px; height: 20px; border-radius: 50%; background-color: var(--blue); }
-.circle-active { background-color: var(--darkGreen); }
-
-.shield { opacity: 0; z-index: 3; }
-.slide { width: 100%; height: 100%; position: absolute; top: 0; left: 0;  }
-
-.starting-slide-0 { transform: translate(-50%, -50%); z-index: 2; }
-.starting-slide-1 { transform: translate(-110%, -50%) scale(80%); z-index: 1; }
-.starting-slide-2 { transform: translate(10%, -50%) scale(80%); z-index: 1; }
-
-.slide-0 { animation: slide-0-to-2 0.5s; animation-fill-mode: forwards; }
-.slide-1 { animation: slide-1-to-0 0.5s; animation-fill-mode: forwards; }
-.slide-2 { animation: slide-2-to-1 0.5s; animation-fill-mode: forwards; }
-
-@keyframes slide-0-to-2 {
-    100% { transform: translate(10%, -50%) scale(80%); z-index: 1;  }
+.center-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes slide-1-to-0 {
-    100% { transform: translate(-50%, -50%); z-index: 2;  }
+/* CAROUSEL =================================================================== */
+.carousel {
+    object-fit: cover; 
+    border: 2px solid white; 
+    border-radius: 20px; 
+    width: 90%; height: 280px; 
+    position: absolute;
+    top: 40px; left: 0;
+    transition: all .3s ease-in;
 }
 
-@keyframes slide-2-to-1 {
-    100% { transform: translate(-110%, -50%) scale(80%); z-index: 1;  }
+.carousel[data-pos="0"] {
+	transform: none;
+    z-index: 3;
+    opacity: 1;
+}
+.carousel[data-pos="1"] {
+	transform: translate(10%, -5%);
+    z-index: 2;
+    opacity: 0.8;
+}
+.carousel[data-pos="2"] {
+	transform: translate(20%, -10%);
+    z-index: 1;
+    opacity: 0.6;
 }
 
-#historical-buddy-img:hover { opacity: 0; }
-#swift-utils-img:hover { opacity: 0; }
-#petal-task-img:hover { opacity: 0; }
+#carousel-container {
+    max-width: 300px; height: 300px;
+    width: 90%;
+    flex-shrink: 0; position: relative;
+}
+
+/* PROJECT CARD =================================================================== */
+.project-card {
+    margin-right: 20px; 
+    position: relative; 
+    height: 300px; 
+    flex: 1; 
+    background-color: white; 
+    border: 2px solid var(--red); 
+    border-radius: 20px;
+}
+.project-card div h3 { color: var(--red); }
+.project-card div h5 { color: var(--red); }
+.project-card div { color: var(--red); }
+.project-card svg { stroke: var(--red); }
+.project-card svg .project-icon-fill { fill: var(--red); }
+
+.project-card:hover { background-color: var(--red); }
+.project-card:hover div { color: white; }
+.project-card:hover div h3 { color: white; }
+.project-card:hover div h5 { color: white; }
+.project-card:hover svg { stroke: white; }
+.project-card:hover svg .project-icon-fill { fill: white; }
+
+.project-icon {
+    width: 160px; height: 160px; 
+    opacity: 0.2; 
+    position: absolute; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); z-index: 1;
+}
+
+/* FEATURED =================================================================== */
+#featured {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23d64e24' fill-opacity='0.4' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+    border: 2px solid var(--red);
+    border-radius: 20px;
+    padding: 20px; margin: 0 20px;
+}
+
+.featured-link {
+    background-color: var(--red);
+    border-radius: 10px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+}
+
+.sliding-text {
+    z-index: 0;
+    position: absolute;
+    left: 10px; top: -45%;
+    animation: slide-down infinite linear;
+}
+
+@keyframes slide-down {
+    0% { top: -45%; }
+    100% { top: 100%; }
+}
+
+/* ABOUT =================================================================== */
+#about {
+    display: flex; 
+    flex-direction: row;
+    background-color: var(--red); 
+    border-radius: 20px; 
+    padding: 20px 20px 60px 20px; margin: 20px;
+}
+#about .center-col { flex-grow: 1; padding: 20px; padding-bottom: 0; }
+
+/* MEDIA ONLY STYLES =============================================================== */
+@media only screen and (max-width: 800px) {
+    #about {
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    #about .center-col { padding-top: 40px; }
+
+    #project-container { flex-direction: column; }
+    .project-card { width: 100%; margin: 0; margin-bottom: 20px; height: 300px; flex: none; }
+
+    h1 { font-size: 60px; }
+    h2 { font-size: 18px; }
+}
+
+@media only screen and (max-width: 450px) {
+    h1 { font-size: 40px; }
+    h2 { font-size: 14px; }
+    p { font-size: 14px; }
+    a { font-size: 10px; }
+}

@@ -1,22 +1,140 @@
 <!DOCTYPE html>
-<html style="background-color: var(--blue);">
+<html>
 <head>
-    <title>Home</title>
+    <title>The Developer | Tami Takada</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="static/styles.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="static/images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="background-color: var(--blue);">
+<body>
     
-    <div style="width: 100%; height: 100%; position: relative;" >
-        <h1 class="position-center" style="z-index: 2;" >TAMI TAKADA</h1>
-        <img src="static/images/town-logo.svg" class="position-center"  style="width: 80%; max-width: 400px;" />
-        <nav class="position-center-x" style="bottom: 40px;">
-            <a href="new.html" style="margin-right: 30px;">NEW</a>
-            <a href="published.html" style="margin-right: 30px;">PUBLISHED</a>
-            <a href="more">MORE</a>
-        </nav>
+    <p style="letter-spacing: 16px; font-family: ZenMaru-Bold; font-size: 20px; color: black; margin: 10px 0; padding-left: 16px;">TAMI TAKADA</p>
+    
+    <div id="featured">
+        <div class="center-col" style="border: 5px solid var(--red); border-radius: 20px; padding: 20px; background-color: #D64E2480; height: 60vh; overflow-y: hidden; position: relative;">
+            
+            <h4 class="sliding-text" style="animation-duration: 4s;">勝<br>海<br>舟</h4>
+            <h4 class="sliding-text" style="animation-duration: 4s; animation-delay: -1.5s;">西<br>郷<br>隆<br>盛</h4>
+            <h4 class="sliding-text" style="left: 80px; animation-duration: 6s; animation-delay: -3s;">岩<br>倉<br>具<br>視</h4>
+            <h4  class="sliding-text" style="left: 80px; animation-duration: 6s;">永<br>倉<br>新<br>八</h4>
+            <h4  class="sliding-text" style="left: 150px; animation-duration: 5s;">木<br>戸<br>孝<br>允</h4>
+            <h4 class="sliding-text" style="left: 150px; animation-duration: 5s; animation-delay: -2s;">坂<br>本<br>龍<br>馬</h4>
+            
+            <div style="z-index: 1;">
+                <h2 style="padding-bottom: 20px;">LATEST PROJECT</h2>
+                <h1 style="font-family: Ontel; padding: 20px 0;">Historical Buddy</h1>
+                <p>Explore history through the enchanting stories<br>of real historical figures</p>
+                
+                <div style="padding-top: 40px;">
+                    <a class="featured-link" href="https://tamitakada.github.io/historical-buddy-website/">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
     </div>
+            
+    <div id="about" >
+        <div id="carousel-container">
+            <img class="carousel" data-pos="0" src="static/images/img-0.jpg" />
+            <img class="carousel" data-pos="1" src="static/images/img-1.jpg" />
+            <img class="carousel" data-pos="2" src="static/images/img-2.jpg" />
+        </div>
+        
+        <div class="center-col">
+            <div class="center-col" style="min-width: 300px; max-width: 700px;">
+                <h2 style="text-align: right;">MEET THE DEV</h2>
+                <p style="line-height: 1.75; text-align: justify; padding: 30px 0 30px 30px;">
+                    I'm Tami Takada, a student dabbling in mobile and web development. My goal is to make learning fun by using game-like elements in my apps. Aside from coding, I love F1 (it's Hammertime!), Natsume Soseki, and pasta. I also have two fluffy cats who like to sit on my keyboard when I'm coding. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-container" class="center-row" style="padding: 0 20px;">
+        <a href="https://apps.apple.com/us/app/questio/id1572090054" class="project-card" >
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="project-icon" >
+                <g clip-path="url(#clip0_1013_238)">
+                    <rect x="69.4369" y="70.6263" width="61.8148" height="117.37" transform="rotate(70 69.4369 70.6263)" stroke-width="3"/>
+                    <path d="M34.0861 89.4711L38.7284 81.4303L64.9935 35.9379L166.639 94.6231L135.732 148.156L81.7648 116.998L34.0861 89.4711Z" stroke-width="3"/>
+                    <rect x="137.304" y="-44.003" width="61.8148" height="117.37" transform="rotate(10 137.304 -44.003)" stroke-width="3"/>
+                    <path d="M54.4564 135.364L81.7369 119.614L107.99 104.456L166.675 206.102L113.142 237.01L54.4564 135.364Z" stroke-width="3"/>
+                </g>
+                <rect x="1.5" y="1.5" width="197" height="197" rx="28.5" stroke-width="3"/>
+                <defs>
+                    <clipPath id="clip0_1013_238">
+                        <rect width="200" height="200" rx="30" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <div class="center-col" style="z-index: 2; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <h3 style="font-family: BungeeHairline; margin-bottom: 10px;">QUESTIO</h3>
+                <h5>iOS FLASHCARD STUDY APP</h5>
+            </div>
+
+            <div style="position: absolute; left: 50%; transform: translateX(-50%); bottom: 20px; font-family: ZenMaru-Bold; letter-spacing: 3px;">
+                <svg width="15" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="project-icon-fill" d="M27.0607 13.0607C27.6464 12.4749 27.6464 11.5251 27.0607 10.9393L17.5147 1.3934C16.9289 0.807612 15.9792 0.807612 15.3934 1.3934C14.8076 1.97919 14.8076 2.92893 15.3934 3.51472L23.8787 12L15.3934 20.4853C14.8076 21.0711 14.8076 22.0208 15.3934 22.6066C15.9792 23.1924 16.9289 23.1924 17.5147 22.6066L27.0607 13.0607ZM-3.276e-09 13.5L26 13.5L26 10.5L3.276e-09 10.5L-3.276e-09 13.5Z" />
+                </svg>
+                VIEW
+            </div>
+        </a>
+
+        <a href="https://nichibook.herokuapp.com/" class="project-card" >
+            <svg class="project-icon" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="project-icon-fill" d="M56 96.3158H54.5C54.5 96.8839 54.821 97.4033 55.3292 97.6574L56 96.3158ZM144.421 96.3158L145.092 97.6574C145.6 97.4033 145.921 96.8839 145.921 96.3158H144.421ZM100.211 30L101.552 29.3292C101.298 28.821 100.779 28.5 100.211 28.5C99.6424 28.5 99.123 28.821 98.8689 29.3292L100.211 30ZM57.6393 87.6057C56.8983 87.2352 55.9973 87.5356 55.6268 88.2765C55.2563 89.0175 55.5566 89.9185 56.2976 90.289L57.6393 87.6057ZM144.121 90.289C144.862 89.9185 145.162 89.0175 144.791 88.2765C144.421 87.5356 143.52 87.2352 142.779 87.6057L144.121 90.289ZM115.037 95.5383C115.864 95.4887 116.494 94.7781 116.445 93.9511C116.395 93.1242 115.685 92.4941 114.858 92.5437L115.037 95.5383ZM129.46 91.0774C128.641 91.2013 128.077 91.9658 128.201 92.7849C128.325 93.604 129.09 94.1676 129.909 94.0436L129.46 91.0774ZM100.211 53.6053C114.54 53.6053 125.177 58.964 132.247 66.9176C139.342 74.8988 142.921 85.5828 142.921 96.3158L145.921 96.3158C145.921 84.9435 142.132 73.5223 134.49 64.9245C126.823 56.2991 115.354 50.6053 100.211 50.6053V53.6053ZM101.271 51.0446C99.3956 49.169 98.1146 47.8819 97.2789 46.7329C96.4893 45.6471 96.1842 44.7981 96.1842 43.8158C96.1842 42.7461 96.5445 41.3634 97.4483 39.217C98.3458 37.0853 99.7007 34.3738 101.552 30.6708L98.8689 29.3292C97.0362 32.9947 95.6279 35.8095 94.6833 38.0528C93.745 40.2813 93.1842 42.1223 93.1842 43.8158C93.1842 45.5967 93.8002 47.0502 94.8527 48.4974C95.8591 49.8812 97.3413 51.3573 99.1499 53.1659L101.271 51.0446ZM98.8689 30.6708C100.72 34.3738 102.075 37.0853 102.973 39.217C103.877 41.3634 104.237 42.7461 104.237 43.8158C104.237 44.7981 103.932 45.6471 103.142 46.7329C102.306 47.8819 101.025 49.169 99.1499 51.0446L101.271 53.1659C103.08 51.3573 104.562 49.8812 105.568 48.4974C106.621 47.0502 107.237 45.5967 107.237 43.8158C107.237 42.1223 106.676 40.2813 105.738 38.0528C104.793 35.8095 103.385 32.9947 101.552 29.3292L98.8689 30.6708ZM55.3292 97.6574C59.2679 99.6268 65.9467 101.028 73.7853 101.95C81.6849 102.88 90.9555 103.342 100.211 103.342C109.466 103.342 118.736 102.88 126.636 101.95C134.474 101.028 141.153 99.6268 145.092 97.6574L143.75 94.9741C140.321 96.689 134.105 98.0509 126.285 98.9708C118.527 99.8835 109.377 100.342 100.211 100.342C91.0445 100.342 81.8941 99.8835 74.1358 98.9708C66.3165 98.0509 60.1006 96.689 56.6708 94.9741L55.3292 97.6574ZM56.2976 90.289C61.302 92.7912 70.5711 94.404 81.1308 95.2523C91.7725 96.1071 103.98 96.2019 115.037 95.5383L114.858 92.5437C103.933 93.1994 91.8657 93.1049 81.371 92.2619C70.7944 91.4123 62.0651 89.8186 57.6393 87.6057L56.2976 90.289ZM129.909 94.0436C135.835 93.1468 140.867 91.916 144.121 90.289L142.779 87.6057C139.967 89.0118 135.326 90.1897 129.46 91.0774L129.909 94.0436ZM57.5 96.3158C57.5 85.5828 61.0794 74.8988 68.1738 66.9176C75.2436 58.964 85.8807 53.6053 100.211 53.6053V50.6053C85.0667 50.6053 73.5985 56.2991 65.9315 64.9245C58.2891 73.5223 54.5 84.9435 54.5 96.3158H57.5Z" />
+                <path d="M63.3686 111.053V140.526C63.3686 162.632 92.8423 162.632 100.211 170C102.951 167.26 108.747 165.539 114.948 163.321M137.053 111.053V140.526C137.053 148.388 133.325 153.454 128.189 157.05" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="1.5" y="1.5" width="197" height="197" rx="28.5" stroke-width="3"/>
+            </svg>
+            
+            <div class="center-col" style="z-index: 2; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <h3 style="font-family: Cecep; margin-bottom: 10px;">NICHIBOOK</h3>
+                <h5>JAPANESE BOOK REVIEW BLOG</h5>
+            </div>
+
+            <div style="position: absolute; left: 50%; transform: translateX(-50%); bottom: 20px; font-family: ZenMaru-Bold; letter-spacing: 3px;">
+                <svg width="15" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="project-icon-fill" d="M27.0607 13.0607C27.6464 12.4749 27.6464 11.5251 27.0607 10.9393L17.5147 1.3934C16.9289 0.807612 15.9792 0.807612 15.3934 1.3934C14.8076 1.97919 14.8076 2.92893 15.3934 3.51472L23.8787 12L15.3934 20.4853C14.8076 21.0711 14.8076 22.0208 15.3934 22.6066C15.9792 23.1924 16.9289 23.1924 17.5147 22.6066L27.0607 13.0607ZM-3.276e-09 13.5L26 13.5L26 10.5L3.276e-09 10.5L-3.276e-09 13.5Z" />
+                </svg>
+                VIEW
+            </div>
+        </a>
+
+        <a href="https://github.com/tamitakada/APCSFinalProject" class="project-card" style="margin-right: 0;" >
+            <svg class="project-icon" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1013_289)">
+                    <g opacity="0.8">
+                        <path d="M129.045 203.534C110.552 189.647 98.5453 172.534 93.9971 161.765L100.125 156.623C102.856 156.862 108.846 156.204 113.798 154.248M129.045 203.534C139.242 211.191 151.412 217.867 165.39 221.957C183.846 227.357 189.516 238.264 202.373 253.584L217.693 240.729M129.045 203.534L183.987 269.011L217.693 240.729M117.54 152.342C130.133 177.627 157.707 194.307 217.693 240.729M117.54 152.342C116.429 153.08 115.152 153.713 113.798 154.248M117.54 152.342C114.502 146.243 112.336 139.643 110.797 132.003C108.719 123.304 120.976 113.019 129.182 116.577C136.438 119.419 142.562 122.698 148.041 126.749M217.693 240.729L166.27 179.445M217.693 240.729L233.014 227.873M217.693 240.729C182.393 173.593 170.755 143.541 148.041 126.749M166.27 179.445L160.142 184.588M166.27 179.445L172.399 174.303M233.014 227.873C220.159 212.552 210.402 205.074 208.289 185.961C206.688 171.484 202.227 158.34 196.457 146.969M233.014 227.873L251.399 212.446L196.457 146.969M196.457 146.969C185.993 126.345 171.224 111.549 161.409 105.2L155.281 110.342C155.053 112.95 153.503 118.345 150.936 122.777M148.041 126.749C148.092 126.695 148.143 126.642 148.193 126.587M148.041 126.749C148.46 126.398 147.802 127.01 148.193 126.587M160.142 184.588L149.858 172.331L162.114 162.046L172.399 174.303M160.142 184.588L172.399 174.303M113.798 154.248C104.166 127.834 75.2943 83.4698 59.8674 65.0847C55.7819 68.5129 46.0892 79.779 40.0033 97.4176L24.5764 79.0325C34.2624 65.6842 77.1607 29.688 91.988 22.4675L107.415 40.8526C88.9874 43.7831 76.2094 51.3722 72.1238 54.8004C87.5507 73.1854 126.228 109.322 150.568 123.394M150.568 123.394C150.692 123.191 150.815 122.985 150.936 122.777M150.568 123.394C149.847 124.567 149.054 125.656 148.193 126.587M208.21 265.658L218.494 277.914M218.494 277.914L209.302 285.628L219.604 303.091L280.888 251.668L264.457 239.347L255.264 247.061M218.494 277.914L255.264 247.061M255.264 247.061L244.98 234.804M150.936 122.777C150.121 124.184 149.203 125.494 148.193 126.587" stroke-width="2"/>
+                        <path d="M65.1014 144.892L45.175 121.144C44.9975 120.933 45.0251 120.618 45.2367 120.44L56.7273 110.798C56.9389 110.621 57.2542 110.648 57.4317 110.86L77.3582 134.607C77.5357 134.819 77.5081 135.134 77.2965 135.312L65.8059 144.954C65.5943 145.131 65.2789 145.103 65.1014 144.892Z" stroke-width="2"/>
+                        <path d="M138.641 83.1851L118.715 59.4377C118.537 59.2262 118.565 58.9108 118.776 58.7333L130.267 49.0915C130.479 48.914 130.794 48.9416 130.972 49.1531L150.898 72.9005C151.075 73.112 151.048 73.4274 150.836 73.6049L139.346 83.2467C139.134 83.4242 138.819 83.3966 138.641 83.1851Z" stroke-width="2"/>
+                    </g>
+                </g>
+                <rect x="1.5" y="1.5" width="197" height="197" rx="28.5" stroke-width="3"/>
+                <defs>
+                    <clipPath id="clip0_1013_289">
+                        <rect width="200" height="200" rx="30" />
+                    </clipPath>
+                </defs>
+            </svg>
+            
+            <div class="center-col" style="z-index: 2; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                <h3 style="font-family: BungeeInline; margin-bottom: 10px;">NEON RACER</h3>
+                <h5>PROCESSING RACING GAME</h5>
+            </div>
+
+            <div style="position: absolute; left: 50%; transform: translateX(-50%); bottom: 20px; font-family: ZenMaru-Bold; letter-spacing: 3px;">
+                <svg width="15" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="project-icon-fill" d="M27.0607 13.0607C27.6464 12.4749 27.6464 11.5251 27.0607 10.9393L17.5147 1.3934C16.9289 0.807612 15.9792 0.807612 15.3934 1.3934C14.8076 1.97919 14.8076 2.92893 15.3934 3.51472L23.8787 12L15.3934 20.4853C14.8076 21.0711 14.8076 22.0208 15.3934 22.6066C15.9792 23.1924 16.9289 23.1924 17.5147 22.6066L27.0607 13.0607ZM-3.276e-09 13.5L26 13.5L26 10.5L3.276e-09 10.5L-3.276e-09 13.5Z" />
+                </svg>
+                VIEW
+            </div>
+        </a>
+        
+    </div>
+
+    <p style="text-align: left; padding: 30px 20px; letter-spacing: 5px; font-family: ZenMaru-Bold; font-size: 14px; color: black;">COPYRIGHT (c) TAMI TAKADA 2022</p>
+
+    <script src="static/script.js"></script>
     
 </body>
 </html>
