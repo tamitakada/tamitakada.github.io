@@ -8,5 +8,8 @@ I used the following fonts in my project (I'm grateful to and in awe of all who 
 * David Jonathan Ross's [Bungee Hairline](https://fonts.google.com/specimen/Bungee+Hairline?query=bungee+hairline) and [Bungee Inline](https://fonts.google.com/specimen/Bungee+Inline?query=bungee+inli)
 * Khurasan's [Ontel](https://www.fontspace.com/ontel-font-f51067)
 * Twicolabs's [Cecep's Handwriting](https://www.fontspace.com/cecep-s-handwriting-2-font-f72804)
+* Inoue Design's [Kaiun](http://idfont.jp/infos_mb.html)
+* Milena Brandao's [Fredoka One](https://fonts.google.com/specimen/Fredoka+One?query=fredoka)
+* Indian Type Foundry's [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins)
 
 Credits to Steve Schoger's [Hero Patterns](https://heropatterns.com/) for the lovely cloud pattern.
