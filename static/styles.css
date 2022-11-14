@@ -24,6 +24,9 @@ html, body {
 @font-face { font-family: BungeeHairline; src: url("fonts/BungeeHairline-Regular.ttf"); }
 @font-face { font-family: BungeeInline; src: url("fonts/BungeeInline-Regular.ttf"); }
 @font-face { font-family: Cecep; src: url("fonts/CecepsHandwriting-vmpKZ.ttf"); }
+@font-face { font-family: Kaiun; src: url("fonts/kaiun421.ttf"); }
+@font-face { font-family: Fredoka; src: url("fonts/FredokaOne-Regular.ttf"); }
+@font-face { font-family: Poppins; src: url("fonts/Poppins-Regular.ttf"); }
 
 /* TEXT STYLES =================================================================== */
 h1 { font-size: 80px; color: white; }
@@ -175,7 +178,7 @@ p {
 
     #about .center-col { padding-top: 40px; }
 
-    #project-container { flex-direction: column; }
+    .project-container { flex-direction: column; }
     .project-card { width: 100%; margin: 0; margin-bottom: 20px; height: 300px; flex: none; }
 
     h1 { font-size: 60px; }
