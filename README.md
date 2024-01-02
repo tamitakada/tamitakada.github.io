@@ -2,17 +2,11 @@
 
 This is my developer website featuring the projects I'm currently working on and ones that I've worked on in the past.
 
-## Acknowledgements
-Thank you to Setsuko Okubo for crafting the beautiful logo (used as a favicon).
+## Credits
+
+Thank you to Setsuko Okubo for crafting the custom logo (used as a favicon).
 
 I used the following fonts in my project:
-* Yoshimichi Ohira's [Zen Maru Gothic](https://fonts.google.com/specimen/Zen+Maru+Gothic?query=zen+maru)
-* Shohei Yamaguchi's [Shokaki Sarari](https://shokaki.hatenablog.jp/entry/2018/06/03/095429)
-* David Jonathan Ross's [Bungee Hairline](https://fonts.google.com/specimen/Bungee+Hairline?query=bungee+hairline) and [Bungee Inline](https://fonts.google.com/specimen/Bungee+Inline?query=bungee+inli)
-* Khurasan's [Ontel](https://www.fontspace.com/ontel-font-f51067)
-* Twicolabs's [Cecep's Handwriting](https://www.fontspace.com/cecep-s-handwriting-2-font-f72804)
-* Inoue Design's [Kaiun](http://idfont.jp/infos_mb.html)
-* Milena Brandao's [Fredoka One](https://fonts.google.com/specimen/Fredoka+One?query=fredoka)
-* Indian Type Foundry's [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins)
-
-Credits to Steve Schoger's [Hero Patterns](https://heropatterns.com/) for the lovely cloud pattern.
+* typefactory's [Despairs](https://www.fontspace.com/despairs-font-f53579)
+* Vernon Adams, Cyreal, and Jacques Le Bailly's [Nunito](https://fonts.google.com/specimen/Nunito)
+* nukosuki's [Kujoutenfuu](https://booth.pm/ja/items/309134)
