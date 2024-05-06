@@ -131,7 +131,7 @@ footer {
     opacity: 0; transition: 0.3s;
 }
 .project-card::after {
-    content: "LEARN\AMORE\A→"; white-space: pre;
+    content: "LEARN\AMORE"; white-space: pre;
     border-radius: 5px;
     -webkit-text-stroke: 2px var(--yellow);
     height: 100%; width: 100%;
